@@ -1,0 +1,243 @@
+Terminal Temple
+
+Online UNIX terminal simulator (bash, shell, zsh - Linux, Mac, BSD)
+
+Copyright © 2023 Niklas Wenzel (Imprint | Privacy Policy)
+
+Start typing your commands into the command line / console.To print available commands, type "help" and press Enter. Learn how to use the terminal.
+
+terminal@terminal-temple ~ $ ls -la
+total 7
+drwxr-xr-x  7 terminal  staff  224 Sep  5 11:02 PM .
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM ..
+drwxr-xr-x  5 terminal  staff  160 Sep  5 11:02 PM Documents
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM Downloads
+drwxr-xr-x  4 terminal  staff  128 Sep  6 10:05 AM Movies
+drwxr-xr-x  2 terminal  staff   64 Sep  5 11:02 PM Music
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM Pictures
+terminal@terminal-temple ~ $ cd MOvies
+cd: no such file or directory: MOvies
+terminal@terminal-temple ~ $ cd Movies
+terminal@terminal-temple Movies $ ls -la
+total 4
+drwxr-xr-x  4 terminal  staff  128 Sep  6 10:05 AM .
+drwxr-xr-x  7 terminal  staff  224 Sep  5 11:02 PM ..
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:06 AM Coco (2017)
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:05 AM Everythign Everywhere All At Once (2022)
+terminal@terminal-temple Movies $ mkdir "Aliens (1979)"
+terminal@terminal-temple Movies $ ls -la
+total 5
+drwxr-xr-x  5 terminal  staff  160 Sep  6 10:05 AM .
+drwxr-xr-x  7 terminal  staff  224 Sep  5 11:02 PM ..
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:15 AM Aliens (1979)
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:06 AM Coco (2017)
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:05 AM Everythign Everywhere All At Once (2022)
+terminal@terminal-temple Movies $ mkdir "Terminator 2 (1991)"
+terminal@terminal-temple Movies $ ls
+Aliens (1979)                             Everythign Everywhere All At Once (2022)
+Coco (2017)                               Terminator 2 (1991)
+terminal@terminal-temple Movies $ ls -F
+Aliens (1979)/                             Everythign Everywhere All At Once (2022)/
+Coco (2017)/                               Terminator 2 (1991)/
+terminal@terminal-temple Movies $ mkdir "Memento (2000)"
+terminal@terminal-temple Movies $ ls -la
+total 7
+drwxr-xr-x  7 terminal  staff  224 Sep  6 10:05 AM .
+drwxr-xr-x  7 terminal  staff  224 Sep  5 11:02 PM ..
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:15 AM Aliens (1979)
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:06 AM Coco (2017)
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:05 AM Everythign Everywhere All At Once (2022)
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:15 AM Memento (2000)
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:15 AM Terminator 2 (1991)
+terminal@terminal-temple Movies $ cd ..
+terminal@terminal-temple ~ $ ls
+Documents       Downloads       Movies          Music           Pictures
+terminal@terminal-temple ~ $ mkdir Classes
+terminal@terminal-temple ~ $ ls -la
+total 8
+drwxr-xr-x  8 terminal  staff  256 Sep  5 11:02 PM .
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM ..
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:15 AM Classes
+drwxr-xr-x  5 terminal  staff  160 Sep  5 11:02 PM Documents
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM Downloads
+drwxr-xr-x  7 terminal  staff  224 Sep  6 10:05 AM Movies
+drwxr-xr-x  2 terminal  staff   64 Sep  5 11:02 PM Music
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM Pictures
+terminal@terminal-temple ~ $ cd Classes
+terminal@terminal-temple Classes $ ls -la
+total 2
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:15 AM .
+drwxr-xr-x  8 terminal  staff  256 Sep  5 11:02 PM ..
+terminal@terminal-temple Classes $ mkdir ICS4U1a
+terminal@terminal-temple Classes $ mkdir ICD2O1a
+terminal@terminal-temple Classes $ mkdir TDJ2O1b
+terminal@terminal-temple Classes $ ls -l
+total 3
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:16 AM ICD2O1a
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:16 AM ICS4U1a
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:16 AM TDJ2O1b
+terminal@terminal-temple Classes $ cd ..
+terminal@terminal-temple ~ $ ls
+Classes         Documents       Downloads       Movies          Music           Pictures
+terminal@terminal-temple ~ $ ls -la
+total 8
+drwxr-xr-x  8 terminal  staff  256 Sep  5 11:02 PM .
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM ..
+drwxr-xr-x  5 terminal  staff  160 Sep  6 10:15 AM Classes
+drwxr-xr-x  5 terminal  staff  160 Sep  5 11:02 PM Documents
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM Downloads
+drwxr-xr-x  7 terminal  staff  224 Sep  6 10:05 AM Movies
+drwxr-xr-x  2 terminal  staff   64 Sep  5 11:02 PM Music
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM Pictures
+terminal@terminal-temple ~ $ cd Picutres
+cd: no such file or directory: Picutres
+terminal@terminal-temple ~ $ cd Pictures
+terminal@terminal-temple Pictures $ ls -la
+total 3
+drwxr-xr-x  3 terminal  staff   96 Sep  5 11:02 PM .
+drwxr-xr-x  8 terminal  staff  256 Sep  5 11:02 PM ..
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:06 AM Miami, FL, USA
+terminal@terminal-temple Pictures $ mkdir "Whistler, BC, Canada"
+terminal@terminal-temple Pictures $ ls -la
+total 4
+drwxr-xr-x  4 terminal  staff  128 Sep  5 11:02 PM .
+drwxr-xr-x  8 terminal  staff  256 Sep  5 11:02 PM ..
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:06 AM Miami, FL, USA
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:16 AM Whistler, BC, Canada
+terminal@terminal-temple Pictures $ cd ..
+terminal@terminal-temple ~ $ ls
+Classes         Documents       Downloads       Movies          Music           Pictures
+terminal@terminal-temple ~ $ cd Music
+terminal@terminal-temple Music $ ls -la
+total 2
+drwxr-xr-x  2 terminal  staff   64 Sep  5 11:02 PM .
+drwxr-xr-x  8 terminal  staff  256 Sep  5 11:02 PM ..
+terminal@terminal-temple Music $ mkdir "Amy Winehouse"
+terminal@terminal-temple Music $ mkdir "Etta James"
+terminal@terminal-temple Music $ mkdir "Aretha Franklin"
+terminal@terminal-temple Music $ mkdir "Emily King"
+terminal@terminal-temple Music $ mkdir "Snoh Alegra"
+terminal@terminal-temple Music $ mkdir "Charlotte Day Wilson"
+terminal@terminal-temple Music $ mkdir "Susah Tedeschi"
+terminal@terminal-temple Music $ mkdir "Shiela E"
+terminal@terminal-temple Music $ mkdir "H.E.R."
+terminal@terminal-temple Music $ ls -l
+total 9
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Amy Winehouse
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Aretha Franklin
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Charlotte Day Wilson
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Emily King
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Etta James
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM H.E.R.
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Shiela E
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Snoh Alegra
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Susah Tedeschi
+terminal@terminal-temple Music $ mkdir "Adele"
+terminal@terminal-temple Music $ ls
+Adele                 Aretha Franklin       Emily King            H.E.R.                Snoh Alegra
+Amy Winehouse         Charlotte Day Wilson  Etta James            Shiela E              Susah Tedeschi
+terminal@terminal-temple Music $ ls -l
+total 10
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Adele
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Amy Winehouse
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Aretha Franklin
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Charlotte Day Wilson
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Emily King
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Etta James
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM H.E.R.
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Shiela E
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Snoh Alegra
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Susah Tedeschi
+terminal@terminal-temple Music $ cd ..
+terminal@terminal-temple ~ $ ls -l
+total 6
+drwxr-xr-x   5 terminal  staff  160 Sep  6 10:15 AM Classes
+drwxr-xr-x   5 terminal  staff  160 Sep  5 11:02 PM Documents
+drwxr-xr-x   3 terminal  staff   96 Sep  5 11:02 PM Downloads
+drwxr-xr-x   7 terminal  staff  224 Sep  6 10:05 AM Movies
+drwxr-xr-x  12 terminal  staff  384 Sep  5 11:02 PM Music
+drwxr-xr-x   4 terminal  staff  128 Sep  5 11:02 PM Pictures
+terminal@terminal-temple ~ $ cd Music
+terminal@terminal-temple Music $ ls -l
+total 10
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Adele
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Amy Winehouse
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Aretha Franklin
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Charlotte Day Wilson
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Emily King
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Etta James
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM H.E.R.
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Shiela E
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Snoh Alegra
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Susah Tedeschi
+terminal@terminal-temple Music $ cd ..
+terminal@terminal-temple ~ $ cd PIctures
+cd: no such file or directory: PIctures
+terminal@terminal-temple ~ $ cd Pictures
+terminal@terminal-temple Pictures $  ls -la
+total 4
+drwxr-xr-x  4 terminal  staff  128 Sep  5 11:02 PM .
+drwxr-xr-x  8 terminal  staff  256 Sep  5 11:02 PM ..
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:06 AM Miami, FL, USA
+drwxr-xr-x  2 terminal  staff   64 Sep  6 10:16 AM Whistler, BC, Canada
+terminal@terminal-temple Pictures $ cd ..
+terminal@terminal-temple ~ $ ls
+Classes         Documents       Downloads       Movies          Music           Pictures
+terminal@terminal-temple ~ $ cd Classes
+terminal@terminal-temple Classes $ ls -l
+total 3
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:16 AM ICD2O1a
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:16 AM ICS4U1a
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:16 AM TDJ2O1b
+terminal@terminal-temple Classes $ cd ..
+terminal@terminal-temple ~ $ ls
+Classes         Documents       Downloads       Movies          Music           Pictures
+terminal@terminal-temple ~ $ cd Movies
+terminal@terminal-temple Movies $ ls -l
+total 5
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:15 AM Aliens (1979)
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:06 AM Coco (2017)
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:05 AM Everythign Everywhere All At Once (2022)
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:15 AM Memento (2000)
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:15 AM Terminator 2 (1991)
+terminal@terminal-temple Movies $ cd ..
+terminal@terminal-temple ~ $ ls -l
+total 6
+drwxr-xr-x   5 terminal  staff  160 Sep  6 10:15 AM Classes
+drwxr-xr-x   5 terminal  staff  160 Sep  5 11:02 PM Documents
+drwxr-xr-x   3 terminal  staff   96 Sep  5 11:02 PM Downloads
+drwxr-xr-x   7 terminal  staff  224 Sep  6 10:05 AM Movies
+drwxr-xr-x  12 terminal  staff  384 Sep  5 11:02 PM Music
+drwxr-xr-x   4 terminal  staff  128 Sep  5 11:02 PM Pictures
+terminal@terminal-temple ~ $ cd Classes
+terminal@terminal-temple Classes $ ls -l
+total 3
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:16 AM ICD2O1a
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:16 AM ICS4U1a
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:16 AM TDJ2O1b
+terminal@terminal-temple Classes $ cd ..
+terminal@terminal-temple ~ $ cd Movies
+terminal@terminal-temple Movies $ ls -l
+total 5
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:15 AM Aliens (1979)
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:06 AM Coco (2017)
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:05 AM Everythign Everywhere All At Once (2022)
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:15 AM Memento (2000)
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:15 AM Terminator 2 (1991)
+terminal@terminal-temple Movies $ cd ..
+terminal@terminal-temple ~ $ cd Music
+terminal@terminal-temple Music $ ls -l
+total 10
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Adele
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Amy Winehouse
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Aretha Franklin
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Charlotte Day Wilson
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Emily King
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Etta James
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM H.E.R.
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Shiela E
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:17 AM Snoh Alegra
+drwxr-xr-x  2 terminal  staff  64 Sep  6 10:18 AM Susah Tedeschi
+terminal@terminal-temple Music $ ls ../Pictures
+Miami, FL, USA        Whistler, BC, Canada
+terminal@terminal-temple Music $ ​ InputInput
